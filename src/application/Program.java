@@ -18,7 +18,7 @@ public class Program {
 		products.add(new Product("Smart TV LG 4K", 4850.00));
 		products.add(new Product("External SSD 1Tb", 785.00));
 		
-		products.removeIf(Product::staticProductPredicate);
+		products.removeIf(Product::nonStaticProductPredicate);
 		
 		for(Product p : products) {
 			System.out.println(p);
